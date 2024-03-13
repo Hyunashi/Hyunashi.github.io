@@ -1,0 +1,234 @@
+/* set the background color of the body and the font size */
+body { 
+    font-size: 100%;
+    background-color: #5A5A5A;
+    font-family: sans-serif;
+}
+
+/* set the title and banner colors with the padding to position the text */
+#menubar {
+    color: lavender; 
+    background: black;
+    border-bottom-width: 1px;
+    font-family: sans-serif;
+}
+
+.title li {
+    display: inline-grid;
+    text-align: center;
+    padding: 1px 50px;
+    border-style: hidden;
+}
+
+/* set the margins, maximum width of the page and the text alignment */
+.outermargins {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+/* set the visuals of the menu navigation to each other file */ 
+.menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: black; 
+    padding: 7px 70px;
+    font-variant: small-caps;
+    font-family: sans-serif;
+    border-style: solid;
+    border-color: black;
+}
+
+.menu li a:hover {
+    background-color: #5A5A5A;
+    color: white;
+    transition: 0.5s ease;
+    border-style: solid;    
+    border-color: #5A5A5A;
+    border-bottom-color: powderblue;
+    border-radius: 10px;
+    padding: 5px 70px;
+}
+
+#title {
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+
+@media only screen and (min-width: 800px) {
+    .columns {
+        display: flex;
+        justify-content: space-around; 
+    }
+}
+
+.photo {
+    border: 5px solid lightseagreen;
+}
+
+.introdiv {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#introduction {
+    color: white;
+    max-width: 400px;
+    min-height: 200px;
+    background-color: lightseagreen;
+    border: 50px solid lightseagreen;
+    margin-right: auto;
+    margin-left: auto;
+} 
+
+.idcontainer {
+    position: relative;
+    width: 310px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: lightseagreen;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}  
+
+.idcontainer:hover .overlay {
+    height: 100%;
+}
+
+.phototext {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.content {
+    color: white;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+  
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.container:hover .image {
+    opacity: 0.3;
+}
+  
+.container:hover .middle {
+    opacity: 1;
+}
+  
+.text {
+    background-color: lightseagreen;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.canva {
+    text-decoration: underline;
+}
+
+.canvalogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 5px lightseagreen;
+    background-color: black;
+}
+
+.diagram {
+    display: block;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+table, th, td {
+    border: 5px solid #5A5A5A;
+    border-collapse: collapse;
+}
+
+th, td {
+    background-color: lightseagreen;
+    padding: 5px;
+}
+
+.colpal {
+    display: block;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.column1 {
+    width: 200px;
+}
+
+.link {
+    color: lightseagreen;
+}
+
+.footer {
+    font-size: 80%;
+    color: lavender; 
+    background: black;
+    border: 5px solid black;
+    padding: 1px;
+    font-family: sans-serif;
+    word-spacing: 3px;
+} 
